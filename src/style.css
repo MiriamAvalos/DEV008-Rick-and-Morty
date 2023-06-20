@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    
+  }
+  html{
+    cursor:url(imagenes/pepinillo.cur), auto;
+  }
+  
+  a:hover{
+    cursor:url(imagenes/Portal.cur),auto;
+  }
+  body{
+    justify-content: center;
+    text-align: center;
+    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+    padding: 0px;
+  }
+  
+  header{
+    padding: 20px;
+  }
+  #logo{
+   margin: 0 0 0 0px;
+   width: 800px;
+  }
+  nav li{
+  display: inline;
+  padding-inline: 0px;
+  margin: 0 0 0 0;
+  }
+  #caja{
+  margin: 0 0 0 0px;
+  justify-content: center;
+  align-items: center;
+  }
+  #btnInicio{
+  width: 150px;
+  margin: 0 50px 0 0px;
+  }
+  
+  #btnPersonajes{
+    width: 150px;
+    margin: 0 50px 0 0px;
+    }
+  main{
+  margin: 0 0 0 50px;
+  }
+  .tabla{
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  }
+  #portal{
+  width: 750px;
+  padding: 0%;
+  margin: 0% auto;
+  display:
+  }
+  #sinopsis{
+  font-size: 30px;
+  color: white;
+  align-content: left;
+  text-align: center;
+  font-family: RickMorty1;
+  background-color:rgba(53, 88, 48, 0.438);
+  height: 0%;
+  width: 500px;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  margin: 0% auto;
+  }
+  @font-face{
+  font-family: RickMorty1;
+  src:url(letraSinopsis.TTF);
+  }
+  @font-face {
+    font-family:letrarick;
+    src:url(letrarick.ttf);
+  
+  }
+  
+  footer{
+    background-color:rgba(53, 88, 48, 0.438);
+    text-align: center;
+    padding: 3px;
+    
+   
+  }
+  #textofooter{
+    font-family:letrarick;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    color:whitesmoke;
+    
+  }
+  
+  #cuerpoPersonajes{
+    justify-content: center;
+    text-align: center;
+    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+    background-repeat:repeat-y;
+    overflow-x:hidden;
+    background-size: contain;
+    
+  }
+  .estiloSegundo{
+    
+    background-color: black;
+    width: 300px;
+    height: 325px;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 10px;
+    display:inline-table;
+    
+    
+  }
+  .estiloSegundo:hover{
+    cursor:url(imagenes/Portal.cur),auto;
+    background-color:rgba(119, 211, 211, 0.555)
+    
+    
+    
+    
+  }
+  
+  .imagenP {
+    width: 200px;
+    justify-content: center;
+    border-radius: 200px;
+    box-shadow: 0 0 4rem rgb(0, 255, 26);
+    margin: 25px;
+  }
+  
+  .nombre2 {
+    font-size: 25px;
+    color: rgb(0, 255, 26);
+    font-family: letrarick;
+  }
+  
+  
+  
+  #img_footer{
+    border-radius: 70px;
+    width: 35px;
+    align-items: center;
+    }
+  

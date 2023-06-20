@@ -1,9 +1,10 @@
-// estas funciones son de ejemplo
+import data from './data/rickandmorty/rickandmorty.js';
+//  esta es para obtener, procesar y manipular datos (tus funciones puras).
 
-export const example = () => {
-  return 'example';
+//console.log(data.results[0].name);
+
+//creo una funcion con el nombre obtenerData que me devuelva solo la propiedad resultados de la data rick and morty osea los personajes 
+export function obtenerData() {
+  return data.results
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
