@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
   </head>
   <body onclick="play()" >
+    <div id="cuerpoCompleto">
     <header>
         <h1><img src="imagenes/logo.png" id="logo"></h1>
         <div id="caja">
@@ -27,18 +28,18 @@
       <div class="tabla">
         <div id="parrafo">
             <p id="sinopsis">
-            "Rick Sánchez es un ejemplo del típico "científico loco".
-            Es un genio, pero es irresponsable, alcohólico, egoísta, un poco depresivo y con poca cordura.
+              "Rick Sanchez is an example of the typical 'mad scientist'. He's a genius yet he's irresponsible, alcoholic, selfish, a little depressed and insane.
+              
             <br>
-            Junto a su Nieto Morty comienza a vivir aventuras interdimensionales, gracias a un artefacto que posee el cual les permite acceder a infinitas dimensiones."
+            Together with his grandson Morty, Rick lives interdimensional adventures, thanks to an artifact that he possesses which allows them to travel through infinite dimensions."
             </p>
           </div>
         <div>
           <img src="imagenes/portal.png" id="portal">
         </div>
-      </div>
+      
     </main>
-    <footer> <img src="imagenes/gif footer.gif" id="img_footer" /> <p id="textofooter" src>genoveva / Miriam </p>
+    <footer> <img src="imagenes/gif footer.gif" id="img_footer"  /> <p id="textofooter" src>genoveva / Miriam </p>
     </footer>
 
     <audio  id="musica">
@@ -48,9 +49,12 @@
       function play(){
     document.getElementById("musica").play();
     }
+    
     </script>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+  </div>
   </body>
+   
 </html>
