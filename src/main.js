@@ -2,18 +2,26 @@
 
 import { obtenerData } from './data.js';
 const resultado= obtenerData();
+
+import { filtrarPorStatus } from './data.js';
+import { filtrarPorSpecie } from './data.js';
+
 //console.log(resultado);
 const primerContenedor = document.getElementById("contenedorPadre")
 const ventanaModal = document.getElementById("modal")
 
+
 //console.log(listadePersonajes);
 function mostrarPersonajes(arregloDePersonajes){
+  //limpia para el filtro  
+  primerContenedor.innerHTML= ""
     for (let i = 0; i < arregloDePersonajes.length; i=i+1) {
         const personajes = arregloDePersonajes[i];
        //console.log(personajes.image,personajes.name);
       // console.log(personajes.name);
       
      //ingreso de tarjeta con todos los personajes
+      
       const segundoContenedor = document.createElement("div")
       segundoContenedor.classList.add("estiloSegundo")
       const imagenPersonaje=document.createElement("img")
@@ -31,9 +39,27 @@ function mostrarPersonajes(arregloDePersonajes){
      segundoContenedor.addEventListener("click",()=>{
         //console.log(personajes.image,personajes.name);
       ventanaModal.innerHTML= ""
+     
+
+
+
         //creación de div de modal con los datos especificos de cada personaje
         const ContenedorModal=document.createElement("div")
         ContenedorModal.classList.add("contenedorModal")
+
+          //cerrar modal
+           
+          const cierraModal=document.createElement("div")
+          cierraModal.classList.add("desapareceModal")
+          cierraModal.textContent="X";
+
+          cierraModal.addEventListener("click",()=>
+          {
+            modal.close();
+          })
+           
+          
+          ventanaModal.appendChild(cierraModal)
 
         const nombrePersonajesModal=document.createElement("h3")
         nombrePersonajesModal.classList.add("nombreModal")
@@ -96,6 +122,33 @@ function mostrarPersonajes(arregloDePersonajes){
 }
 mostrarPersonajes(resultado);
 
+/*filtro por Estado */
+
+const estadodeVida = document.getElementById("filtroEstado")
+estadodeVida.addEventListener("change", function () {
+const valorOpcion = estadodeVida.value;
+const primerFiltro = filtrarPorStatus(valorOpcion,resultado, "status"); //asigno el argumento a la función
+console.log(primerFiltro);
+//console.log(valorOpcion, primerFiltro);
+
+mostrarPersonajes(primerFiltro);
+
+});
+
+/*filtro por Especie*/
+
+const filtroEspecie = document.getElementById("filtroEspecie")
+filtroEspecie.addEventListener("change", function () {
+const valorEspecie= filtroEspecie.value;
+const segundoFiltro = filtrarPorStatus(valorEspecie,resultado, "species");
 
 
-//console.log(resultado);
+
+
+mostrarPersonajes(segundoFiltro);
+
+
+
+});
+
+

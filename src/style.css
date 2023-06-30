@@ -77,7 +77,8 @@
   padding: 0%;
   margin: 0% auto;
   display:
-  }
+   }
+
   #sinopsis{
   font-size: 30px;
   color: white;
@@ -160,6 +161,7 @@
     border-radius: 10px;
     display:inline-table;
     margin:50px;
+    
     
   }
    
@@ -244,18 +246,32 @@
        
     }
 
+    .desapareceModal{
+      display:flex;
+      font-family: letrarick;
+      color:aqua;
+     font-size: 40px;
+     margin:0px;
+     padding:0px;
+     position:absolute;
+     left: 90%;
+    }
+    .desapareceModal:hover{
+      cursor:url(imagenes/Portal.cur),auto;
+     
+    }
+
+
     
     .imagenModal{
       display:flex;
          
         top: 30%; 
-        width: 50%;
+        width: 49%;
         left: 10px;
         border-radius: 10px;
         
-        
-        
-        
+       
         
       }
 
@@ -291,11 +307,17 @@
         flex-direction: column;
         
         padding: 2.5px;
-        font-size: 20px;
+        font-size: 19px;
         max-height:50%;
         box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
        
 
 }
         
+
+
+  #filtroEstado{ 
+    font-family: RickMorty1;
+
+}
     

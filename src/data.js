@@ -6,10 +6,20 @@ import data from './data/rickandmorty/rickandmorty.js';
 //creo una funcion con el nombre obtenerData que me devuelva solo la propiedad resultados de la data rick and morty osea los personajes 
 export function obtenerData() {
   return data.results
+  
 };
+  //const todosLosPersonajes= obtenerData();
+  
 
- export function filtrarporStatus( status, arregloDePersonajes) 
-{
+ export function filtrarPorStatus(status, arregloDePersonajes , option) {
+  let arregloResultado = [];
+  
+  for (let i=0; i<arregloDePersonajes.length; i++){
+    
+  if ( status === arregloDePersonajes[i][option]){
+    arregloResultado.push(arregloDePersonajes[i])
+  }
+}
   // averiguar que es status, ya sabemos que status es un string que puede tener 2 valores:
   // "Alive" o "dead"
   // si estatus === "Alive" -> 
@@ -19,6 +29,21 @@ export function obtenerData() {
   // al terminar de recorrer el arreglo devolvemos arreglo resultado 
 
 
-  const arregloResultado = [];
+  
+  //console.log(arregloResultado);
   return arregloResultado;
+}
+ /*filtrarporStatus("Dead", todosLosPersonajes)*/
+
+ export function filtrarPorSpecie(specie, arregloDePersonajes) {
+  let arregloResultadoEspecies = [];
+  
+  for (let i=0; i<arregloDePersonajes.length; i++){
+    
+  if ( specie === arregloDePersonajes[i].species){
+    arregloResultadoEspecies.push(arregloDePersonajes[i])
+  }
+}
+  
+  return arregloResultadoEspecies;
 }
