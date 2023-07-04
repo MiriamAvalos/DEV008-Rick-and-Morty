@@ -15,7 +15,7 @@
     cursor:url(imagenes/Portal.cur),auto;
   }
   body{
-    
+    display:flex;
     justify-content: center;
     text-align: center;
     background: url(imagenes/fondo\ rick\ y\ morty.jpg);
@@ -30,6 +30,7 @@
 
   .cuerpoCompleto{
     justify-content: center;
+    
   }
   
   header{
@@ -126,19 +127,19 @@
   
    
   #cuerpoPersonajes{
-    margin:0px;
+    
+    text-align: center;
     background: url(imagenes/fondo\ rick\ y\ morty.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size:cover;
     max-width:100%
-   
-    
-   
-
-    
    }
 
+
+  #contenedorPadre{
+
+  }
   .estiloSegundo{
 
     
@@ -152,7 +153,7 @@
         margin:25px;
         background-repeat:no-repeat;*/
         
-    
+      box-sizing: border-box;
     background-color: black;
     width: 300px;
     height: 325px;
@@ -160,9 +161,9 @@
     
     border-radius: 10px;
     display:inline-table;
+    
     margin:50px;
-    
-    
+    align-items:center;
   }
    
     .estiloSegundo:hover{
@@ -320,4 +321,6 @@
     font-family: RickMorty1;
 
 }
-    
+.cursorDeFiltros:hover{
+  cursor:url(imagenes/Portal.cur),auto; 
+}

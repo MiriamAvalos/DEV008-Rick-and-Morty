@@ -22,16 +22,16 @@
         <li><a href="personajes.html">
             <img src="imagenes/botonPersonajes.png" id="btnPersonajes">
         </a></li>
-
-        <select id="filtroEstado">
+         <!-- filtro por Estado -->
+        <select id="filtroEstado" class="cursorDeFiltros">
           <option value="" selected disabled> Status </option>
           <option value="Alive">Alive</option>
           <option value="Dead">Dead</option>
           <option value="unknown">unknown</option>
           
         </select> 
-
-        <select id="filtroEspecie">
+         <!-- filtro por Especie -->
+        <select id="filtroEspecie" class="cursorDeFiltros">
           <option value="" selected disabled> Specie </option>
           <option value="Human">Human</option>
           <option value="Alien">Alien</option>
@@ -46,9 +46,24 @@
           <option value="Disease">Disease</option>
           <option value="Cronenberg">Cronenberg</option>
 
+        </select> 
+        <!-- filtro por Genero -->
+        <select id="filtroGenero"  class="cursorDeFiltros">
+          <option value="" selected disabled> Gender </option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="unknown">unknown</option>
           
         </select> 
 
+        <!--ordenamiento -->
+
+        <select id="ordenData"  class="cursorDeFiltros">
+          <option value="" selected disabled> Ordenamiento</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          
+        </select> 
           
           
         
@@ -73,7 +88,7 @@
     
      
     
-    <footer> <img src="imagenes/gif footer.gif" id="img_footer"  /> <p id="textofooter" src>genoveva / Miriam </p>
+    <footer> <img src="imagenes/gif footer.gif" id="img_footer"  /> <p id="textofooter" src>Miriam A. </p>
     </footer>
   </div>
 

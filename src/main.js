@@ -3,8 +3,11 @@
 import { obtenerData } from './data.js';
 const resultado= obtenerData();
 
-import { filtrarPorStatus } from './data.js';
-import { filtrarPorSpecie } from './data.js';
+import { todosLosFiltros } from './data.js';
+
+import {ordenaPersonajes} from './data.js';
+
+
 
 //console.log(resultado);
 const primerContenedor = document.getElementById("contenedorPadre")
@@ -127,7 +130,7 @@ mostrarPersonajes(resultado);
 const estadodeVida = document.getElementById("filtroEstado")
 estadodeVida.addEventListener("change", function () {
 const valorOpcion = estadodeVida.value;
-const primerFiltro = filtrarPorStatus(valorOpcion,resultado, "status"); //asigno el argumento a la función
+const primerFiltro = todosLosFiltros(valorOpcion,resultado, "status"); //asigno el argumento a la función
 console.log(primerFiltro);
 //console.log(valorOpcion, primerFiltro);
 
@@ -140,10 +143,7 @@ mostrarPersonajes(primerFiltro);
 const filtroEspecie = document.getElementById("filtroEspecie")
 filtroEspecie.addEventListener("change", function () {
 const valorEspecie= filtroEspecie.value;
-const segundoFiltro = filtrarPorStatus(valorEspecie,resultado, "species");
-
-
-
+const segundoFiltro = todosLosFiltros(valorEspecie,resultado, "species");
 
 mostrarPersonajes(segundoFiltro);
 
@@ -151,4 +151,26 @@ mostrarPersonajes(segundoFiltro);
 
 });
 
+/*filtro por Genero*/
+const filtroGenero = document.getElementById("filtroGenero")
+filtroGenero.addEventListener("change" , function (){
+const valorGenero = filtroGenero.value;
+const tercerFiltro = todosLosFiltros(valorGenero,resultado, "gender");
 
+mostrarPersonajes(tercerFiltro);
+
+});
+
+
+/*Ordenamiento*/
+ const ordenaLaData=document.getElementById("ordenData")
+ ordenaLaData.addEventListener("change", function(){
+ const valordeOrden=ordenaLaData.value;
+ const ordenarData= ordenaPersonajes (valordeOrden,resultado);
+
+ mostrarPersonajes(ordenarData);
+
+
+
+
+ });
