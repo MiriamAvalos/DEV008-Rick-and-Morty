@@ -126,8 +126,9 @@
   }
   
    
-  #cuerpoPersonajes{
-    
+  #bodyPersonajes{
+    margin:0px;
+    justify-content: center;
     text-align: center;
     background: url(imagenes/fondo\ rick\ y\ morty.jpg);
     background-repeat:no-repeat;
@@ -137,22 +138,11 @@
    }
 
 
-  #contenedorPadre{
+  #contenedorPadrePersonajes{
+    justify-content: center;
 
   }
-  .estiloSegundo{
-
-    
-    /*background-image: url('imagenes/fondomodal.png');
-        background-size:contain;
-        background-color: transparent;
-        display:inline-table;
-        width: 380px;
-        height: 160px;
-        
-        margin:25px;
-        background-repeat:no-repeat;*/
-        
+  .tarjetasPersonajes{
       box-sizing: border-box;
     background-color: black;
     width: 300px;
@@ -166,22 +156,14 @@
     align-items:center;
   }
    
-    .estiloSegundo:hover{
+    .tarjetasPersonajes:hover{
     cursor:url(imagenes/Portal.cur),auto;
     background-color:rgba(119, 211, 211, 0.555)
      
     
   }
   
-  .imagenP {
-   /* width: 110px;
-    padding: 40px 0px 25px 114px;
-    display: flex;
-    position:absolute;
-    border-radius: 50px;*/
-    
-    
-
+  .imagenPersonajes{
     width: 200px;
     justify-content: center;
     border-radius: 200px;
@@ -189,14 +171,10 @@
     margin: 25px;
   }
   
-  .nombre2 {
-    /*padding: 85px 0px 25px 240px;
-    z-index:auto;
-    display: flex;
+  .nombrePersonaje {
     
-    position:absolute;
    
-    font-size: 15px;
+    font-size: 25px;
     color:black;
     font-family: letrarick;*/
     font-size: 25px;
@@ -262,18 +240,14 @@
      
     }
 
-
-    
     .imagenModal{
       display:flex;
-         
+        padding:5px;
         top: 30%; 
         width: 49%;
         left: 10px;
         border-radius: 10px;
-        
-       
-        
+     
       }
 
       .nombreModal{
@@ -284,6 +258,8 @@
         margin:15px;
         font-family: letrarick;
         box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+        text-shadow: 3px 3px 3px blue;
+        
         
         justify-content:center;
       
@@ -297,26 +273,22 @@
         padding:50px;
       }
 
-    
-
     .lista{
       display:flex;
       list-style-type: none;
         color: aqua;
+        
         font-family: RickMorty1;
         text-align: center;
         flex-direction: column;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
         
         padding: 2.5px;
         font-size: 19px;
         max-height:50%;
         box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
-       
-
 }
         
-
-
   #filtroEstado{ 
     font-family: RickMorty1;
 

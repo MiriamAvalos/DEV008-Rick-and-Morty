@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="imagenes/icono .png"/>
-    <meta charset="utf-8">
-    <title>Personajes</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width", initial-scale="1" maximum-scale="1" />
-  </head>
-  
-<body >
-  <div id="cuerpoPersonajes">
-  <header>
+
+<head>
+  <link rel="icon" href="imagenes/icono .png" />
+  <meta charset="utf-8">
+  <title>Personajes</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width" , initial-scale="1" maximum-scale="1" />
+</head>
+<body id="bodyPersonajes">
+  <div>
+    <header>
       <h1><img src="imagenes/logo.png" id="logo"></h1>
       <div id="caja">
-        
-    <nav>
-      <ul>
-        <li><a href="index.html">
-            <img src="imagenes/boton inicio.png" id="btnInicio">
-        </a></li>
-        <li><a href="personajes.html">
-            <img src="imagenes/botonPersonajes.png" id="btnPersonajes">
-        </a></li>
-         <!-- filtro por Estado -->
-        <select id="filtroEstado" class="cursorDeFiltros">
-          <option value="" selected disabled> Status </option>
-          <option value="Alive">Alive</option>
-          <option value="Dead">Dead</option>
-          <option value="unknown">unknown</option>
-          
-        </select> 
-         <!-- filtro por Especie -->
-        <select id="filtroEspecie" class="cursorDeFiltros">
-          <option value="" selected disabled> Specie </option>
-          <option value="Human">Human</option>
-          <option value="Alien">Alien</option>
-          <option value="Humanoid">Humanoid</option>
-          <option value="Mytholog">Mytholog</option>
-          <option value="unknown">unknown</option>
-          <option value="Poopybutthole">Poopybutthole</option>
-          <option value="Animal">Animal</option>
-          <option value="Vampire">Vampire</option>
-          <option value="Robot">Robot</option>
-          <option value="Parasite">Parasite</option>
-          <option value="Disease">Disease</option>
-          <option value="Cronenberg">Cronenberg</option>
+        <nav>
+          <ul>
+            <li><a href="index.html">
+                <img src="imagenes/boton inicio.png" id="btnInicio">
+              </a></li>
+            <li><a href="personajes.html">
+                <img src="imagenes/botonPersonajes.png" id="btnPersonajes">
+              </a></li>
+            <section id="menu">
+              <!-- filtro por Estado -->
+              <select id="filtroEstado" class="cursorDeFiltros">
+                <option value="" selected disabled> Status </option>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="unknown">unknown</option>
 
-        </select> 
-        <!-- filtro por Genero -->
-        <select id="filtroGenero"  class="cursorDeFiltros">
-          <option value="" selected disabled> Gender </option>
-          <option value="Female">Female</option>
-          <option value="Male">Male</option>
-          <option value="unknown">unknown</option>
-          
-        </select> 
+              </select>
+              <!-- filtro por Especie -->
+              <select id="filtroEspecie" class="cursorDeFiltros">
+                <option value="" selected disabled> Specie </option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Humanoid">Humanoid</option>
+                <option value="Mytholog">Mytholog</option>
+                <option value="unknown">unknown</option>
+                <option value="Poopybutthole">Poopybutthole</option>
+                <option value="Animal">Animal</option>
+                <option value="Vampire">Vampire</option>
+                <option value="Robot">Robot</option>
+                <option value="Parasite">Parasite</option>
+                <option value="Disease">Disease</option>
+                <option value="Cronenberg">Cronenberg</option>
 
-        <!--ordenamiento -->
+              </select>
+              <!-- filtro por Genero -->
+              <select id="filtroGenero" class="cursorDeFiltros">
+                <option value="" selected disabled> Gender </option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="unknown">unknown</option>
 
-        <select id="ordenData"  class="cursorDeFiltros">
-          <option value="" selected disabled> Ordenamiento</option>
-          <option value="A-Z">A-Z</option>
-          <option value="Z-A">Z-A</option>
-          
-        </select> 
-          
-          
-        
-      </ul>
+              </select>
+
+              <!--ordenamiento -->
+
+              <select id="ordenData" class="cursorDeFiltros">
+                <option value="" selected disabled> Ordenamiento</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+
+              </select>
+
+            </section>
+          </ul>
+        </nav>
+      </div>
     </header>
-    </nav>
-     <main>
-      <div id="contenedorPadre">
-      
-
-      </div> 
-      
-      <dialog id="modal"  >
-     
-        
-
+    <main>
+      <div id="contenedorPadrePersonajes">
+      </div>
+      <dialog id="modal">
       </dialog>
-      
-     
-     </main>
-      
-    
-     
-    
-    <footer> <img src="imagenes/gif footer.gif" id="img_footer"  /> <p id="textofooter" src>Miriam A. </p>
+    </main>
+    <footer> <img src="imagenes/gif footer.gif" id="img_footer" />
+      <p id="textofooter" src>Miriam A. </p>
     </footer>
   </div>
-
-      <div id="root"></div>
-      <script src="main.js" type="module"></script>
-    </body>
-  </html>
+  <script src="main.js" type="module"></script>
+</body>
+</html>

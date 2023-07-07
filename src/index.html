@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="imagenes/icono .png"/>
-    <meta charset="utf-8">
-    <title>Rick y Morty</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body onclick="play()" >
-    <div id="cuerpoCompleto">
+<head>
+  <link rel="icon" href="imagenes/icono .png" />
+  <meta charset="utf-8">
+  <title>Rick y Morty</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body onclick="play()">
+  <div id="cuerpoCompleto">
     <header>
-        <h1><img src="imagenes/logo.png" id="logo"></h1>
-        <div id="caja">
-      <nav> 
-        <ul>
-        <li><a href="index.html">
-          <img src="imagenes/boton inicio.png" id="btnInicio">
-      </a></li>
-          <li><a href="personajes.html">
-            <img src="imagenes/botonPersonajes.png" id="btnPersonajes"> 
-        </a></li>
-        </ul>
-      </nav>
-    </div>
+      <h1><img src="imagenes/logo.png" id="logo"></h1>
+      <div id="caja">
+        <nav>
+          <ul>
+            <li><a href="index.html">
+                <img src="imagenes/boton inicio.png" id="btnInicio">
+              </a></li>
+            <li><a href="personajes.html">
+                <img src="imagenes/botonPersonajes.png" id="btnPersonajes">
+              </a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="tabla">
         <div id="parrafo">
-            <p id="sinopsis">
-              "Rick Sanchez is an example of the typical 'mad scientist'. He's a genius yet he's irresponsible, alcoholic, selfish, a little depressed and insane.
-              
+          <p id="sinopsis">
+            "Rick Sanchez is an example of the typical 'mad scientist'. He's a genius yet he's irresponsible, alcoholic,
+            selfish, a little depressed and insane.
+
             <br>
-            Together with his grandson Morty, Rick lives interdimensional adventures, thanks to an artifact that he possesses which allows them to travel through infinite dimensions."
-            </p>
-          </div>
+            Together with his grandson Morty, Rick lives interdimensional adventures, thanks to an artifact that he
+            possesses which allows them to travel through infinite dimensions."
+          </p>
+        </div>
         <div>
           <img src="imagenes/portal.png" id="portal">
         </div>
-      
+      </div>
     </main>
-    <footer> <img src="imagenes/gif footer.gif" id="img_footer"  /> <p id="textofooter" src>Miriam A. </p>
+    <footer> <img src="imagenes/gif footer.gif" id="img_footer" />
+      <p id="textofooter" src>Miriam A. </p>
     </footer>
-
-    <audio  id="musica">
+    <audio id="musica">
       <source src="soy pepinillo rick.mp3" type="audio/mpeg">
     </audio>
     <script>
-      function play(){
-    document.getElementById("musica").play();
-    }
-    
+      function play() {
+        document.getElementById("musica").play();
+      }
     </script>
-
-    <div id="root"></div>
     <script src="main.js" type="module"></script>
   </div>
-  </body>
-   
+</body>
+
 </html>
