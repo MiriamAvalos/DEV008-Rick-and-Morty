@@ -1,13 +1,9 @@
 *{
-    
     padding:0px;
-    
-    
-    
-    
+    margin:0px;  
   }
-  html{
-    
+
+  html{ 
     cursor:url(imagenes/pepinillo.cur), auto;
   }
   
@@ -15,6 +11,7 @@
     cursor:url(imagenes/Portal.cur),auto;
   }
   body{
+    margin:0px;
     display:flex;
     justify-content: center;
     text-align: center;
@@ -24,26 +21,31 @@
     background-attachment: fixed;
     background-size:cover;
     max-width:100%
-    
-
   }
 
   .cuerpoCompleto{
+    margin:0px;
     justify-content: center;
     
   }
   
   header{
-    padding: 20px;
+    padding: 15px;
   }
   #logo{
-    margin: 0 0 0 0px;
+    margin: 0px;
    width: 800px;
+
   }
-  nav li{
+  nav{
   display: inline;
   padding-inline: 0px;
   margin: 0 0 0 0;
+  }
+  
+  li{
+    display:inline;
+    padding-inline: 0px;
   }
   #caja{
   margin: 0 0 0 0px;
@@ -64,35 +66,44 @@
     }
     
     #contenedorPadre{
+      margin:0px;
       justify-content:center;
       
     }
   
   .tabla{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding: 30px;
   align-items: center;
-  background-size: cover;
-  display: flex;
   }
+
   #portal{
-  width: 750px;
-  padding: 0%;
-  margin: 0% auto;
-  display:
+    position:absolute;
+    left:600px;
+  width: 800px;
+  margin:0px;
    }
 
   #sinopsis{
+    position:absolute;
   font-size: 30px;
-  color: white;
-  align-content: left;
-  
+  color: rgb(10, 10, 10);
   font-family: RickMorty1;
-  background-color:rgba(53, 88, 48, 0.438);
-  
-  width: 500px;
+   width: 500px;
+   height: 490px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 40px;
   align-items: center;
-  margin: 0% auto;
+  margin:0px;
+  line-height: 35px;
+  text-shadow: 2px 2px 2px  rgb(0, 255, 26);
+  background-color: rgba(0, 255, 255, 0.377);
+  left: 30px;
+
+
   }
   @font-face{
   font-family: RickMorty1;
@@ -105,16 +116,15 @@
   }
   
   footer{
+    position:absolute;
+    right: 2px;
+    margin-top: 600px;
     background-color:rgba(53, 88, 48, 0.438);
     text-align: center;
     padding: 3px;
     justify-content: center;
-    
     width:100%;
     background-size:cover;
-
-    
-   
   }
   #textofooter{
     font-family:letrarick;
@@ -148,10 +158,8 @@
     width: 300px;
     height: 325px;
     justify-content: center;
-    
     border-radius: 10px;
     display:inline-table;
-    
     margin:50px;
     align-items:center;
   }
@@ -159,8 +167,6 @@
     .tarjetasPersonajes:hover{
     cursor:url(imagenes/Portal.cur),auto;
     background-color:rgba(119, 211, 211, 0.555)
-     
-    
   }
   
   .imagenPersonajes{
@@ -172,25 +178,30 @@
   }
   
   .nombrePersonaje {
-    
-   
     font-size: 25px;
     color:black;
     font-family: letrarick;*/
     font-size: 25px;
     color: rgb(0, 255, 26);
-    font-family: letrarick;
-    
+    font-family: letrarick; 
     
   }
-  
-  
   
   #img_footer{
     border-radius: 70px;
     width: 40px;
     align-items: center;
     
+    }
+
+    section{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    select{
+      font-family:letrarick;
     }
 
     #modal{
@@ -203,21 +214,11 @@
         padding:25px;
         outline:none;
         /*background-color: transparent;*/
-        border-radius: 30px;
-        
-        
-       
-        
+        border-radius: 30px; 
     }
     .contenedorModal{
      
-      margin:0px;
-      
-      
-      
-      
-      
-      
+      margin:0px; 
   }
 
     dialog::backdrop{
@@ -259,8 +260,6 @@
         font-family: letrarick;
         box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
         text-shadow: 3px 3px 3px blue;
-        
-        
         justify-content:center;
       
       }
@@ -277,22 +276,17 @@
       display:flex;
       list-style-type: none;
         color: aqua;
-        
         font-family: RickMorty1;
         text-align: center;
         flex-direction: column;
         box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
-        
         padding: 2.5px;
         font-size: 19px;
         max-height:50%;
         box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
 }
         
-  #filtroEstado{ 
-    font-family: RickMorty1;
-
-}
+  
 .cursorDeFiltros:hover{
   cursor:url(imagenes/Portal.cur),auto; 
 }
