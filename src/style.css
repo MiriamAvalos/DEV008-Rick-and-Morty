@@ -257,7 +257,7 @@ footer{
   #modal{
       justify-content: center;
       align-items: center;
-      position:absolute;
+      display: fixed;
       left: 350px;
       width: 600px;
       margin-top: 120px;
