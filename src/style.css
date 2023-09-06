@@ -1,292 +1,348 @@
 *{
-    padding:0px;
-    margin:0px;  
-  }
+  padding:0px;
+  margin:0px;  
+}
 
-  html{ 
-    cursor:url(imagenes/pepinillo.cur), auto;
-  }
-  
-  a:hover{
-    cursor:url(imagenes/Portal.cur),auto;
-  }
-  body{
-    margin:0px;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
-    background-repeat:no-repeat;
-    overflow-x:hidden;
-    background-attachment: fixed;
-    background-size:cover;
-    max-width:100%
-  }
+html{ 
+  cursor:url(imagenes/pepinillo.cur), auto;
+}
 
-  .cuerpoCompleto{
-    margin:0px;
-    justify-content: center;
-    
-  }
-  
-  header{
-    padding: 15px;
-  }
-  #logo{
-    margin: 0px;
-   width: 800px;
-
-  }
-  nav{
-  display: inline;
-  padding-inline: 0px;
-  margin: 0 0 0 0;
-  }
-  
-  li{
-    display:inline;
-    padding-inline: 0px;
-  }
-  #caja{
-  margin: 0 0 0 0px;
+a:hover{
+  cursor:url(imagenes/Portal.cur),auto;
+}
+body{
+  margin:0px;
+  display:flex;
   justify-content: center;
-  align-items: center;
-  }
-  #btnInicio{
-  width: 150px;
-  margin: 0 50px 0 0px;
+  text-align: center;
+  background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+  background-repeat:no-repeat;
+  overflow-x:hidden;
+  background-attachment: fixed;
+  background-size:cover;
   max-width:100%
+}
+
+.cuerpoCompleto{
+  margin:0px;
+  justify-content: center;
+
+  
+}
+
+header{
+  padding: 15px;
+}
+#logo{
+  margin: 0px;
+ width: 800px;
+
+}
+nav{
+display: inline;
+padding-inline: 0px;
+margin: 0 0 0 0;
+}
+
+li{
+  display:inline;
+  padding-inline: 0px;
+}
+#caja{
+margin: 0 0 0 0px;
+justify-content: center;
+align-items: center;
+}
+#btnInicio{
+position:absolute;
+width: 150px;
+right: 700px;
+max-width:100%;
+}
+
+#btnPersonajes{
+  position:absolute;
+  width: 150px;
+ right: 480px;
+  max-width:100%
+  
   }
   
-  #btnPersonajes{
-    width: 150px;
-    margin: 0 50px 0 0px;
-    max-width:100%
+  #contenedorPadre{
+    margin:0px;
+    justify-content:center;
     
-    }
-    
-    #contenedorPadre{
-      margin:0px;
-      justify-content:center;
-      
-    }
+  }
+
+.tabla{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:0px;
+  padding: 30px;
+align-items: center;
+}
+
+#portal{
+  position:absolute;
+  left:600px;
+width: 800px;
+margin:0px;
+margin-top: 40px;
+ }
+
+#sinopsis{
+  position:absolute;
+font-size: 30px;
+color: rgb(10, 10, 10);
+font-family: RickMorty1;
+ width: 500px;
+ height: 490px;
+border-radius: 10px;
+padding: 40px;
+align-items: center;
+margin:0px;
+line-height: 35px;
+text-shadow: 2px 2px 2px  rgb(0, 255, 26);
+background-color: rgba(0, 255, 255, 0.377);
+left: 30px;
+margin-top: 40px;
+
+}
+@font-face{
+font-family: RickMorty1;
+src:url(letraSinopsis.TTF);
+}
+@font-face {
+  font-family:letrarick;
+  src:url(letrarick.ttf);
+
+}
+
+footer{
+  position:absolute;
+  right: 2px;
+  margin-top: 600px;
+  background-color:rgba(53, 88, 48, 0.438);
+  text-align: center;
+  padding: 3px;
+  justify-content: center;
+  width:100%;
+  background-size:cover;
+}
+#textofooter{
+  font-family:letrarick;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+  color:whitesmoke;
   
-  .tabla{
+}
+
+ 
+#bodyPersonajes{
+  margin:0px;
+  justify-content: center;
+  text-align: center;
+  background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  max-width:100%
+ }
+
+
+#contenedorPadrePersonajes{
+  justify-content: center;
+  margin-top: 100px;
+
+}
+.tarjetasPersonajes{
+    box-sizing: border-box;
+  background-color: black;
+  width: 300px;
+  height: 325px;
+  justify-content: center;
+  border-radius: 10px;
+  display:inline-table;
+  margin:40px;
+  align-items:center;
+}
+ 
+  .tarjetasPersonajes:hover{
+  cursor:url(imagenes/Portal.cur),auto;
+  background-color:rgba(119, 211, 211, 0.555)
+}
+
+.imagenPersonajes{
+  width: 200px;
+  justify-content: center;
+  border-radius: 200px;
+  box-shadow: 0 0 4rem rgb(0, 255, 26);
+  margin: 25px;
+}
+
+.nombrePersonaje {
+  font-size: 25px;
+  color:black;
+  font-family: letrarick;*/
+  font-size: 25px;
+  color: rgb(0, 255, 26);
+  font-family: letrarick; 
+  
+}
+
+#img_footer{
+  border-radius: 70px;
+  width: 40px;
+  align-items: center;
+  
+  }
+
+  section{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin:0px;
-    padding: 30px;
-  align-items: center;
-  }
-
-  #portal{
-    position:absolute;
-    left:600px;
-  width: 800px;
-  margin:0px;
-   }
-
-  #sinopsis{
-    position:absolute;
-  font-size: 30px;
-  color: rgb(10, 10, 10);
-  font-family: RickMorty1;
-   width: 500px;
-   height: 490px;
-  border-radius: 10px;
-  padding: 40px;
-  align-items: center;
-  margin:0px;
-  line-height: 35px;
-  text-shadow: 2px 2px 2px  rgb(0, 255, 26);
-  background-color: rgba(0, 255, 255, 0.377);
-  left: 30px;
-
-
-  }
-  @font-face{
-  font-family: RickMorty1;
-  src:url(letraSinopsis.TTF);
-  }
-  @font-face {
-    font-family:letrarick;
-    src:url(letrarick.ttf);
-  
-  }
-  
-  footer{
-    position:absolute;
-    right: 2px;
-    margin-top: 600px;
-    background-color:rgba(53, 88, 48, 0.438);
-    text-align: center;
-    padding: 3px;
-    justify-content: center;
-    width:100%;
-    background-size:cover;
-  }
-  #textofooter{
-    font-family:letrarick;
-    font-size: 14px;
-    text-align: center;
-    margin: 0px;
-    color:whitesmoke;
-    
-  }
-  
    
-  #bodyPersonajes{
-    margin:0px;
-    justify-content: center;
-    text-align: center;
-    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    max-width:100%
-   }
-
-
-  #contenedorPadrePersonajes{
-    justify-content: center;
-
   }
-  .tarjetasPersonajes{
-      box-sizing: border-box;
-    background-color: black;
-    width: 300px;
-    height: 325px;
-    justify-content: center;
+  select{
+    box-shadow: 0px 2px 4px rgb(0, 255, 26);
+    font-family:letrarick;
+    font-size: 20px;
     border-radius: 10px;
-    display:inline-table;
-    margin:50px;
-    align-items:center;
+    margin:25px;
+    transition: box-shadow 0.3s;
   }
-   
-    .tarjetasPersonajes:hover{
-    cursor:url(imagenes/Portal.cur),auto;
-    background-color:rgba(119, 211, 211, 0.555)
-  }
-  
-  .imagenPersonajes{
-    width: 200px;
-    justify-content: center;
-    border-radius: 200px;
-    box-shadow: 0 0 4rem rgb(0, 255, 26);
-    margin: 25px;
-  }
-  
-  .nombrePersonaje {
-    font-size: 25px;
-    color:black;
-    font-family: letrarick;*/
-    font-size: 25px;
-    color: rgb(0, 255, 26);
-    font-family: letrarick; 
-    
-  }
-  
-  #img_footer{
-    border-radius: 70px;
-    width: 40px;
-    align-items: center;
-    
-    }
 
-    section{
-      display:flex;
-      align-items: center;
+  select:hover {
+    box-shadow: 0px 6px 6px rgb(0, 255, 26);
+  }
+  #filtroEstado{
+    position:absolute;
+    background-color: aquamarine;
+    letter-spacing: 2px;
+    right: 890px;
+    margin-top: 210px;
+  }
+  #filtroEspecie{
+    position:absolute;
+    margin-top: 210px;
+    right: 670px;
+    background-color:aquamarine;
+    letter-spacing: 2px;
+  }
+  #filtroGenero{
+    position:absolute;
+    margin-top: 210px;
+    right: 450px;
+    background-color: aquamarine;
+    letter-spacing: 2px;
+  }
+#ordenData{
+  position:absolute;
+  margin-top: 210px;
+  right: 250px;
+  letter-spacing: 2px;
+  background-color: aquamarine;
+  font-family: RickMorty1;
+  font-size: 24px;
+  box-shadow: 0px 2px 4px rgb(0, 255, 26);
+  
+}
+
+#ordenData:hover {
+  box-shadow: 0px 6px 6px rgb(0, 255, 26);
+}
+
+  #modal{
       justify-content: center;
-     
-    }
-    select{
-      font-family:letrarick;
-    }
+      align-items: center;
+      position:absolute;
+      left: 350px;
+      width: 600px;
+      margin-top: 120px;
+      outline: none;
+      background-image: url('imagenes/fondomodal1.jpg');
+      padding:25px;
+      outline:none;
+      /*background-color: transparent;*/
+      border-radius: 30px; 
+  }
+  .contenedorModal{
+   
+    margin:0px; 
+}
 
-    #modal{
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        width: 600px;
-        outline: none;
-        background-image: url('imagenes/fondomodal1.jpg');
-        padding:25px;
-        outline:none;
-        /*background-color: transparent;*/
-        border-radius: 30px; 
-    }
-    .contenedorModal{
+  dialog::backdrop{
+      background-color: rgba(0, 255, 26, 0.473);
      
-      margin:0px; 
   }
 
-    dialog::backdrop{
-        background-color: rgba(0, 255, 26, 0.473);
-       
+  .desapareceModal{
+    display:flex;
+    font-family: letrarick;
+    color:aqua;
+   font-size: 40px;
+   margin:0px;
+   padding:0px;
+   position:absolute;
+   left: 90%;
+  }
+  .desapareceModal:hover{
+    cursor:url(imagenes/Portal.cur),auto;
+   
+   
+  }
+
+  .imagenModal{
+    display:flex;
+      padding:5px;
+      top: 30%; 
+      width: 49%;
+      left: 10px;
+      border-radius: 10px;
+   
     }
 
-    .desapareceModal{
-      display:flex;
+    .nombreModal{
+      display: flex;
+      top:10px;
+      font-size: 35px;
+      color: rgb(0, 255, 26);
+      margin:15px;
       font-family: letrarick;
-      color:aqua;
-     font-size: 40px;
-     margin:0px;
-     padding:0px;
-     position:absolute;
-     left: 90%;
-    }
-    .desapareceModal:hover{
-      cursor:url(imagenes/Portal.cur),auto;
-     
+      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+      text-shadow: 3px 3px 3px blue;
+      justify-content:center;
+    
     }
 
-    .imagenModal{
-      display:flex;
-        padding:5px;
-        top: 30%; 
-        width: 49%;
-        left: 10px;
-        border-radius: 10px;
-     
-      }
+    .detalle{
+      display:flex; 
+    }
 
-      .nombreModal{
-        display: flex;
-        top:10px;
-        font-size: 35px;
-        color: rgb(0, 255, 26);
-        margin:15px;
-        font-family: letrarick;
-        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
-        text-shadow: 3px 3px 3px blue;
-        justify-content:center;
+    .contenedordeLista{
+      padding:50px;
+    }
+
+  .lista{
+    display:flex;
+    list-style-type: none;
+      color: aqua;
+      font-family: RickMorty1;
+      text-align: center;
+      flex-direction: column;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+      padding: 2.5px;
+      font-size: 19px;
+      max-height:50%;
+      box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
+}
       
-      }
 
-      .detalle{
-        display:flex; 
-      }
-
-      .contenedordeLista{
-        padding:50px;
-      }
-
-    .lista{
-      display:flex;
-      list-style-type: none;
-        color: aqua;
-        font-family: RickMorty1;
-        text-align: center;
-        flex-direction: column;
-        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
-        padding: 2.5px;
-        font-size: 19px;
-        max-height:50%;
-        box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
-}
-        
-  
 .cursorDeFiltros:hover{
-  cursor:url(imagenes/Portal.cur),auto; 
+cursor:url(imagenes/Portal.cur),auto; 
+
 }
+
+
