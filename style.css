@@ -265,6 +265,7 @@ footer{
       background-image: url('imagenes/fondomodal1.jpg');
       padding:25px;
       outline:none;
+      /*background-color: transparent;*/
       border-radius: 30px; 
   }
   .contenedorModal{
