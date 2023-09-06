@@ -257,7 +257,7 @@ footer{
   #modal{
       justify-content: center;
       align-items: center;
-      position:absolute;
+      display: fixed;
       left: 350px;
       width: 600px;
       margin-top: 120px;
@@ -265,7 +265,6 @@ footer{
       background-image: url('imagenes/fondomodal1.jpg');
       padding:25px;
       outline:none;
-      /*background-color: transparent;*/
       border-radius: 30px; 
   }
   .contenedorModal{
