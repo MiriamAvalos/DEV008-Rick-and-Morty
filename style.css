@@ -37,7 +37,20 @@ header{
   margin: 0px;
  width: 800px;
 
+
+ animation: parallaxEffect 5s linear infinite alternate;
 }
+
+@keyframes parallaxEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Ajusta la cantidad de movimiento */
+    }
+}
+
+
 nav{
 display: inline;
 padding-inline: 0px;
@@ -344,5 +357,457 @@ footer{
 cursor:url(imagenes/Portal.cur),auto; 
 
 }
+
+
+
+/* MEDIA */
+
+@media (max-width: 480px){
+
+
+
+  *{
+    padding:0px;
+    margin:0px;  
+  }
+  
+  html{ 
+    cursor:url(imagenes/pepinillo.cur), auto;
+  }
+  
+  a:hover{
+    cursor:url(imagenes/Portal.cur),auto;
+  }
+  body{
+    margin:0px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+    background-repeat:no-repeat;
+    overflow-x:hidden;
+    background-attachment: fixed;
+    background-size:cover;
+    max-width:100%
+  }
+  
+ 
+  header{
+    display: flex;
+    padding: 15px;
+    margin:70px;
+    
+    
+  }
+
+  #logo{
+   display:flex;
+   position:absolute;
+    margin: 0px;
+   width: 1450px;
+   height: 450px;
+   left: 40px;
+   
+  
+  }
+  nav{
+    display:flex;
+     padding-inline: 0px;
+  margin: 0 0 0 0;
+  }
+  
+  li{
+    display:inline;
+    padding-inline: 0px;
+  }
+  #caja{
+  margin: 0 0 0 0px;
+ 
+  display:flex;
+  
+  }
+  #btnInicio{
+  display:flex;
+  position: absolute; 
+  width: 350px;
+  max-width:100%;
+  left: 360px;
+  margin-top: 520px;
+  }
+  
+  #btnPersonajes{
+    display: flex;
+    position:absolute;
+    width: 350px;
+   left: 790px;
+    max-width:100%;
+    margin-top: 520px;
+    }
+    
+    #contenedorPadre{
+      margin:0px;
+      justify-content:center;
+      
+    }
+  
+  .tabla{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding: 30px;
+  align-items: center;
+  }
+  
+  #parrafo{
+    display:flex;
+    
+  }
+  #portal{
+    
+    left:30px;
+  width: 1650px;
+  margin:0px;
+  margin-top: 620px;
+  position: absolute;
+  left: 0; /* Inicia en la posición inicial */
+  
+  animation: slideRightToLeft 6s linear infinite alternate;
+}
+
+@keyframes slideRightToLeft {
+    0%, 100% {
+        left: 0; /* Inicia en la posición inicial y se detiene aquí */
+    }
+    50% {
+        left: 100%; /* Llega a la posición más a la derecha */
+    }
+}
+   
+  
+  #sinopsis{
+    position:absolute;
+  font-size: 70px;
+  color: rgb(10, 10, 10);
+  font-family: RickMorty1;
+   width: 1010px;
+   height: 950px;
+  border-radius: 10px;
+  padding: 40px;
+  align-items: center;
+  margin:0px;
+  line-height: 60px;
+  text-shadow: 2px 2px 2px  rgb(0, 255, 26);
+  background-color: rgba(0, 255, 255, 0.486);
+  left: 250px;
+  margin-top: 1830px;
+  border-radius: 20px;
+  border: 2px solid #00ff00; /* Borde verde */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra verde */
+  
+  
+  }
+
+
+
+
+  @font-face{
+  font-family: RickMorty1;
+  src:url(letraSinopsis.TTF);
+  }
+  @font-face {
+    font-family:letrarick;
+    src:url(letrarick.ttf);
+  
+  }
+  
+  
+footer{
+  position:absolute;
+  margin-top: 3090px;
+  background-color:rgba(53, 88, 48, 0.438);
+  text-align: center;
+ 
+  justify-content: center;
+  align-items: center;
+  width:1540px;
+  left: 5px;
+  height: 180px;
+  
+  
+}
+#img_footer{
+  margin:7px;
+  width: 92px;
+  height: 97px;
+  border-radius: 70%;
+}
+  
+  #textofooter{
+    font-family:letrarick;
+    font-size: 40px;
+    text-align: center;
+    
+    color:whitesmoke;
+     
+  }
+
+  #footerPersonajes{
+
+
+    position:fixed;
+    margin-top: 3090px;
+    background-color:rgba(53, 88, 48, 0.438);
+    text-align: center;
+   
+    justify-content: center;
+    align-items: center;
+    width:1540px;
+    left: 5px;
+    height: 180px;
+    bottom: 0;
+    
+
+  } 
+  #bodyPersonajes{
+    display:flex;
+    margin:0px;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+    background: url(imagenes/fondo\ rick\ y\ morty.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    max-width: 100%;
+    overflow-x:hidden;
+    
+   }
+  
+  main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contenedorPadrePersonajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Espacio entre tarjetas */
+    max-width: 100%;
+    left:582px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    margin-top: 741px;
+   
+ 
+  }
+  .tarjetasPersonajes{
+  
+    background-color: black;
+    width: 346px;
+    height: 371px;
+    justify-content: center;
+    border-radius: 10px;
+    display:inline-table;
+    margin:32px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding:20px;
+    
+    
+  }
+   
+    .tarjetasPersonajes:hover{
+    cursor:url(imagenes/Portal.cur),auto;
+    background-color:rgba(119, 211, 211, 0.555)
+  }
+  
+  .imagenPersonajes{
+    width: 208px;
+    justify-content: center;
+    border-radius: 200px;
+    box-shadow: 0 0 4rem rgb(0, 255, 26);
+    margin: 19px;
+  }
+  
+  .nombrePersonaje {
+    font-size: 29px;
+    color:black;
+    font-family: letrarick;*/
+    font-size: 25px;
+    color: rgb(0, 255, 26);
+    font-family: letrarick; 
+    margin-top: 25px;
+    
+  }
+  
+  
+    section{
+      position:absolute;
+      left:1800px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 650px;
+      padding:10px;
+     
+    }
+    select{
+      box-shadow: 0px 2px 4px rgb(0, 255, 26);
+      font-family:letrarick;
+      font-size: 45px;
+      border-radius: 10px;
+      margin:40px;
+      transition: box-shadow 0.3s;
+      width: 290px;
+      height: 60px;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+  
+    select:hover {
+      box-shadow: 0px 6px 6px rgb(0, 255, 26);
+    }
+    #filtroEstado{
+      position:absolute;
+      background-color: aquamarine;
+       right: 1375px;
+      margin-top: 210px;
+      
+    }
+    #filtroEspecie{
+      position:absolute;
+      margin-top: 210px;
+      right: 1020px;
+      background-color:aquamarine;
+      letter-spacing: 2px;
+    }
+    #filtroGenero{
+      position:absolute;
+      margin-top: 210px;
+      right: 660px;
+      background-color: aquamarine;
+      letter-spacing: 2px;
+     
+   
+    }
+  #ordenData{
+    position:absolute;
+    margin-top: 210px;
+    right: 310px;
+    letter-spacing: 2px;
+    background-color: aquamarine;
+    font-family: RickMorty1;
+    font-size: 40px;
+    box-shadow: 0px 2px 4px rgb(0, 255, 26);
+    width: 290px;
+    height: 60px;
+    
+  }
+  
+  #ordenData:hover {
+    box-shadow: 0px 6px 6px rgb(0, 255, 26);
+  }
+  
+    #modal{
+        justify-content: center;
+        align-items: center;
+        display: fixed;
+        left: 312px;
+        width: 886px;
+        height: 585px;
+        margin-top: 60%;
+        outline: none;
+        background-image: url('imagenes/fondomodal1.jpg');
+        padding:25px;
+        outline:none;
+        /*background-color: transparent;*/
+        border-radius: 30px; 
+    }
+    .contenedorModal{
+     
+      margin:0px; 
+  }
+  
+    dialog::backdrop{
+        background-color: rgba(0, 255, 26, 0.473);
+       
+    }
+  
+    .desapareceModal{
+      display:flex;
+      font-family: letrarick;
+      color:aqua;
+     font-size: 59px;
+     margin:0px;
+     padding:0px;
+     position:absolute;
+     left: 90%;
+    }
+    .desapareceModal:hover{
+      cursor:url(imagenes/Portal.cur),auto;
+     
+     
+    }
+  
+    .imagenModal{
+      display: flex;
+      padding: 2px;
+      top: 30%;
+      width: 50%;
+      left: 10px;
+      border-radius: 37px;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+      margin-top: 22px;
+      }
+      }
+  
+      .nombreModal{
+        display: flex;
+        top:10px;
+        font-size: 54px;
+        color: rgb(0, 255, 26);
+        margin:15px;
+        font-family: letrarick;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+        text-shadow: 3px 3px 3px blue;
+        justify-content:center;
+        margin-top: 13px;
+      
+      }
+  
+      .detalle{
+        display:flex; 
+      }
+  
+      .contenedordeLista{
+        padding: 42px;
+    width: 379px;
+    margin-top: 50px;
+    position: absolute;
+    left: 470px;
+      }
+  
+    .lista{
+      display:flex;
+      list-style-type: none;
+        color: aqua;
+        font-family: RickMorty1;
+        text-align: center;
+        flex-direction: column;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.884);
+        padding: 2.5px;
+        font-size: 29px;
+        max-height:50%;
+        box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
+  }
+        
+  
+  .cursorDeFiltros:hover{
+  cursor:url(imagenes/Portal.cur),auto; 
+  
+  }
+
 
 
