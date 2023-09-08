@@ -266,7 +266,7 @@ footer{
 #ordenData:hover {
   box-shadow: 0px 6px 6px rgb(0, 255, 26);
 }
-
+/*MODAL WEB*/
   #modal{
       justify-content: center;
       align-items: center;
@@ -351,6 +351,7 @@ footer{
       max-height:50%;
       box-shadow: 0 10px 20px  rgba(0, 255, 26, 0.562);
 }
+
       
 
 .cursorDeFiltros:hover{
@@ -360,9 +361,26 @@ cursor:url(imagenes/Portal.cur),auto;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA */
 
-@media (max-width: 768px){
+@media (max-width: 480px){
 
 
 
