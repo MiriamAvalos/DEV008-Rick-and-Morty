@@ -17,23 +17,28 @@ Este proyecto es una aplicación web que muestra información detallada sobre lo
 - **@media Queries:** Diseño responsivo, adaptando la interfaz a diferentes tamaños de pantalla.
 - **Jest:** Pruebas unitarias para garantizar la funcionalidad correcta de las funciones.
 
-## Vista de Escritorio
+<div align="center">
+  <h2>Vista Escritorio</h2>
+  
+</div>
+
 
 <div align="center">
   <img src="desktop1.png" alt="Vista de Escritorio" width="400" />
-  </div>
+</div>
   
-  <div align="center">
-    <img src="desktop2.png" alt="Vista de Escritorio" width="400" />
+<div align="center">
+  <img src="desktop2.png" alt="Vista de Escritorio" width="400" />
 </div>
 
-## Vista Móvil
 
 <div align="center">
+  <h2>Vista Móvil</h2>
   <img src="mobile1.png" alt="Vista Móvil" width="200" />
 </div>
 
 <div align="center">
+  
   <img src="mobile2.png" alt="Vista Móvil" width="200" />
 </div>
 
@@ -41,4 +46,4 @@ Este proyecto es una aplicación web que muestra información detallada sobre lo
 
 El proyecto incluye pruebas unitarias escritas con Jest para garantizar la correcta funcionalidad de las funciones esenciales, como la obtención de datos, el filtrado y el ordenamiento de la lista de personajes.
 
-[Enlace al Proyecto](https://miriamavalos.github.io/DEV008-Rick-and-Morty/) ✌️ 
+[Enlace al Proyecto](https://miriamavalos.github.io/DEV008-Rick-and-Morty/) ✌️
