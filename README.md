@@ -21,13 +21,19 @@ Este proyecto es una aplicación web que muestra información detallada sobre lo
 
 <div align="center">
   <img src="desktop1.png" alt="Vista de Escritorio" width="400" />
-  <img src="desktop2.png" alt="Vista de Escritorio" width="400" />
+  </div>
+  
+  <div align="center">
+    <img src="desktop2.png" alt="Vista de Escritorio" width="400" />
 </div>
 
 ## Vista Móvil
 
-<div style="display: flex; justify-content: space-around;">
+<div align="center">
   <img src="mobile1.png" alt="Vista Móvil" width="200" />
+</div>
+
+<div align="center">
   <img src="mobile2.png" alt="Vista Móvil" width="200" />
 </div>
 
